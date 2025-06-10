@@ -1,4 +1,4 @@
-# Multi-Area OSPF Lab
+2# Multi-Area OSPF Lab
 
 ![OSPF Network Diagram](./Images/!!!OSPF_TOPOLOGY.png)
 
@@ -13,7 +13,7 @@
 | **BBR**  | G0/0      | 10.12.0.1/16     | 0    | Backbone Router   |
 |          | Router ID | 1.1.1.1           |      | Priority: 255     |
 | **ABR1** | G0/0      | 10.12.0.2/16     | 0    | Link to Area 0    |
-|          | G0/1      | 10.20.1.1/16     | 1    | Link to Area 1    |
+|          | G0/1      | 10.20.0.1/16     | 1    | Link to Area 1    |
 |          | Router ID | 1.1.1.2           |      | Area Border Router|
 | **ABR2** | G0/0      | 10.12.0.3/16     | 0    | Link to Area 0    |
 |          | G0/1      | 172.16.0.1/24    | 2    | Link to Area 2    |
@@ -22,7 +22,7 @@
 |          | G0/1      | 192.168.3.1/24   | 3    | Link to Area 3    |
 |          | Router ID | 1.1.1.4           |      | Area Border Router|
 | **ASBR** | G0/0      | 10.12.0.5/16     | 0    | Link to Area 0    |
-|          | G0/1      | 209.30.17.2/30   | 14   | External/Internet |
+|          | G0/1      | 209.30.17.1/30   | 14   | External/Internet |
 |          | Router ID | 1.1.1.5           |      | AS Boundary Router|
 | **IR0**  | G0/0      | 10.20.0.2/16     | 1    | Internal Router   |
 |          | Router ID | 1.1.2.1           |      |                   |
@@ -61,7 +61,7 @@ router-id 1.1.1.1
 ```cisco
 router ospf 1
 network 10.12.0.0 0.0.255.255 area 0
-network 10.20.0.0 0.15.255.255 area 1
+network 10.20.0.0 0.0.255.255 area 1
 router-id 1.1.1.2
 ```
 
