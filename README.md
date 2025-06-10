@@ -46,7 +46,6 @@
 - **ASBR** redistributes external routes and provides default route injection
 - **Router IDs** follow structured2 numbering: Area 0 (1.1.1.x), Area 1 (1.1.2.x), etc.
 - **Interface costs** are configured to influence optimal path selection
-- All areas use **authentication** for security
 
 ## Key Commands Used
 
