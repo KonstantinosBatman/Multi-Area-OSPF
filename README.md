@@ -55,7 +55,6 @@
 router ospf 1
 network 10.12.0.0 0.0.255.255 area 0
 router-id 1.1.1.1
-area 0 authentication message-digest
 ```
 
 ### ABR1 (Area Border Router) Configuration
