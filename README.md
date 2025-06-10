@@ -10,25 +10,25 @@
 
 | Device   | Interface | IP Address        | Area | Notes             |
 |----------|-----------|-------------------|------|-------------------|
-| **BBR**  | G0/0      | 10.12.1.1/16     | 0    | Backbone Router   |
+| **BBR**  | G0/0      | 10.12.0.1/16     | 0    | Backbone Router   |
 |          | Router ID | 1.1.1.1           |      | Priority: 255     |
-| **ABR1** | G0/0      | 10.12.2.1/16     | 0    | Link to Area 0    |
+| **ABR1** | G0/0      | 10.12.0.2/16     | 0    | Link to Area 0    |
 |          | G0/1      | 10.20.1.1/16     | 1    | Link to Area 1    |
 |          | Router ID | 1.1.1.2           |      | Area Border Router|
-| **ABR2** | G0/0      | 10.12.3.1/16     | 0    | Link to Area 0    |
+| **ABR2** | G0/0      | 10.12.0.3/16     | 0    | Link to Area 0    |
 |          | G0/1      | 172.16.0.1/24    | 2    | Link to Area 2    |
 |          | Router ID | 1.1.1.3           |      | Area Border Router|
-| **ABR3** | G0/0      | 10.12.4.1/16     | 0    | Link to Area 0    |
+| **ABR3** | G0/0      | 10.12.0.4/16     | 0    | Link to Area 0    |
 |          | G0/1      | 192.168.3.1/24   | 3    | Link to Area 3    |
 |          | Router ID | 1.1.1.4           |      | Area Border Router|
-| **ASBR** | G0/0      | 10.12.5.1/16     | 0    | Link to Area 0    |
+| **ASBR** | G0/0      | 10.12.0.5/16     | 0    | Link to Area 0    |
 |          | G0/1      | 209.30.17.2/30   | 14   | External/Internet |
 |          | Router ID | 1.1.1.5           |      | AS Boundary Router|
-| **IR0**  | G0/0      | 10.20.2.1/16     | 1    | Internal Router   |
+| **IR0**  | G0/0      | 10.20.0.2/16     | 1    | Internal Router   |
 |          | Router ID | 1.1.2.1           |      |                   |
-| **IR1**  | G0/0      | 10.20.3.1/16     | 1    | Internal Router   |
+| **IR1**  | G0/0      | 10.20.0.3/16     | 1    | Internal Router   |
 |          | Router ID | 1.1.2.2           |      |                   |
-| **IR2**  | G0/0      | 10.20.4.1/16     | 1    | Internal Router   |
+| **IR2**  | G0/0      | 10.20.0.4/16     | 1    | Internal Router   |
 |          | Router ID | 1.1.2.3           |      |                   |
 | **IR3**  | G0/0      | 172.16.0.2/24    | 2    | Internal Router   |
 |          | Router ID | 1.1.3.1           |      |                   |
@@ -44,7 +44,7 @@
 - **Area 0** serves as the backbone area connecting all other areas through ABRs
 - **ABRs** connect non-backbone areas to Area 0, maintaining OSPF hierarchical design
 - **ASBR** redistributes external routes and provides default route injection
-- **Router IDs** follow structured numbering: Area 0 (1.1.1.x), Area 1 (1.1.2.x), etc.
+- **Router IDs** follow structured2 numbering: Area 0 (1.1.1.x), Area 1 (1.1.2.x), etc.
 - **Interface costs** are configured to influence optimal path selection
 - All areas use **authentication** for security
 
