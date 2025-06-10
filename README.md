@@ -1,4 +1,4 @@
-2# Multi-Area OSPF Lab
+### Multi-Area OSPF
 
 ![OSPF Network Diagram](./Images/!!!OSPF_TOPOLOGY.png)
 
