@@ -53,7 +53,7 @@
 ### BBR (Backbone Router) Configuration
 ```cisco
 router ospf 1
-network 10.12.0.0 0.15.255.255 area 0
+network 10.12.0.0 0.0.255.255 area 0
 router-id 1.1.1.1
 area 0 authentication message-digest
 ```
@@ -61,18 +61,15 @@ area 0 authentication message-digest
 ### ABR1 (Area Border Router) Configuration
 ```cisco
 router ospf 1
-network 10.12.0.0 0.15.255.255 area 0
+network 10.12.0.0 0.0.255.255 area 0
 network 10.20.0.0 0.15.255.255 area 1
 router-id 1.1.1.2
-area 0 authentication message-digest
-area 1 authentication message-digest
-area 1 range 10.20.0.0 255.240.0.0
 ```
 
 ### ABR2 (Area Border Router) Configuration
 ```cisco
 router ospf 1
-network 10.12.0.0 0.15.255.255 area 0
+network 10.12.0.0 0.0.255.255 area 0
 network 172.16.0.0 0.0.0.255 area 2
 router-id 1.1.1.3
 ```
@@ -80,7 +77,7 @@ router-id 1.1.1.3
 ### ABR3 (Area Border Router) Configuration
 ```cisco
 router ospf 1
-network 10.12.0.0 0.15.255.255 area 0
+network 10.12.0.0 0.0.255.255 area 0
 network 192.168.3.0 0.0.0.255 area 3
 router-id 1.1.1.4
 ```
@@ -88,7 +85,8 @@ router-id 1.1.1.4
 ### ASBR (AS Boundary Router) Configuration
 ```cisco
 router ospf 1
-network 10.12.0.0 0.15.255.255 area 0
+network 10.12.0.0 0.0.255.255 area 0
+network 209.30.17.0 0.0.0.3 area 14
 router-id 1.1.1.5
 default-information originate
 !
