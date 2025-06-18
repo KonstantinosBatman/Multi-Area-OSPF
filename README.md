@@ -80,7 +80,7 @@ network 192.168.3.0 0.0.0.255 area 3
 router-id 1.1.1.4
 ```
 
-### ASBR (AS Boundary Router) Configuration
+### ASBR (Autonomous System Boundary Router) Configuration
 ```cisco
 router ospf 1
 network 10.12.0.0 0.0.255.255 area 0
