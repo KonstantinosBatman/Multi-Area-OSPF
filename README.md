@@ -2,7 +2,7 @@
 
 ![OSPF Network Diagram](./Images/!!!OSPF_TOPOLOGY.png)
 
-- This is a practical multi-area OSPF lab designed to demonstrate hierarchical OSPF design, Area Border Router (ABR) configuration, and inter-area route summarization across multiple areas.
+- This is a practical multi-area OSPF lab designed to demonstrate hierarchical OSPF design.
 - The lab includes 5 OSPF areas (0, 1, 2, 3, and 14) with proper ABR placement and external route redistribution via ASBR.
 - The end goal is to achieve **full connectivity between all areas** while maintaining OSPF hierarchical design principles.
 
