@@ -64,7 +64,7 @@ network 10.12.0.0 0.0.255.255 area 0
 network 10.20.0.0 0.0.255.255 area 1
 router-id 1.1.1.2
 ```
-
+![ABR1 show ip ospf neighbor](./Images/ABR1%20show%20ip%20ospf%20neighbor.PNG)
 
 ### ABR2 (Area Border Router) Configuration
 ```cisco
@@ -73,7 +73,7 @@ network 10.12.0.0 0.0.255.255 area 0
 network 172.16.0.0 0.0.0.255 area 2
 router-id 1.1.1.3
 ```
-
+![ABR2 show ip ospf neighbor](./Images/ABR2%20show%20ip%20ospf%20neighbor.PNG)
 
 ### ABR3 (Area Border Router) Configuration
 ```cisco
@@ -82,7 +82,7 @@ network 10.12.0.0 0.0.255.255 area 0
 network 192.168.3.0 0.0.0.255 area 3
 router-id 1.1.1.4
 ```
-
+![ABR3 show ip ospf neighbor](./Images/ABR3%20show%20ip%20ospf%20neighbor.PNG)
 
 ### ASBR (Autonomous System Boundary Router) Configuration
 ```cisco
@@ -94,7 +94,7 @@ default-information originate
 !
 ip route 0.0.0.0 0.0.0.0 209.30.17.1
 ```
-
+![ASBR show ip ospf neighbor](./Images/ASBR%20show%20ip%20ospf%20neighbor.PNG)
 
 ### Internal Router (IR0) Configuration (Is the same for the other IRs)
 ```cisco
