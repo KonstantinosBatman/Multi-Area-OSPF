@@ -55,7 +55,7 @@ router ospf 1
 network 10.12.0.0 0.0.255.255 area 0
 router-id 1.1.1.1
 ```
-[BBR show ip ospf neighbor](./Images/BBR show%20ip%20ospf%20neighbor.PNG)
+![BBR show ip ospf neighbor](./Images/BBR%20show%20ip%20ospf%20neighbor.PNG)
 
 ### ABR1 (Area Border Router) Configuration
 ```cisco
