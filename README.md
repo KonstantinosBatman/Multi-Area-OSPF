@@ -1,4 +1,4 @@
-### Multi-Area OSPF
+# Multi-Area OSPF Lab
 
 ![OSPF Network Diagram](./Images/!!!OSPF_TOPOLOGY.png)
 
@@ -47,9 +47,9 @@
 - **Router IDs** follow structured2 numbering: Area 0 (1.1.1.x), Area 1 (1.1.2.x), etc.
 - **Interface costs** are configured to influence optimal path selection
 
-## Key Commands Used
+## Important Configuration
 
-### BBR (Backbone Router) Configuration
+## BBR (Backbone Router) Configuration
 ```cisco
 router ospf 1
 network 10.12.0.0 0.0.255.255 area 0
@@ -57,7 +57,9 @@ router-id 1.1.1.1
 ```
 ![BBR show ip ospf neighbor](./Images/BBR%20show%20ip%20ospf%20neighbor.PNG)
 
-### ABR1 (Area Border Router) Configuration
+---
+
+## ABR1 (Area Border Router) Configuration
 ```cisco
 router ospf 1
 network 10.12.0.0 0.0.255.255 area 0
@@ -66,7 +68,9 @@ router-id 1.1.1.2
 ```
 ![ABR1 show ip ospf neighbor](./Images/ABR1%20show%20ip%20ospf%20neighbor.PNG)
 
-### ABR2 (Area Border Router) Configuration
+---
+
+## ABR2 (Area Border Router) Configuration
 ```cisco
 router ospf 1
 network 10.12.0.0 0.0.255.255 area 0
@@ -75,7 +79,9 @@ router-id 1.1.1.3
 ```
 ![ABR2 show ip ospf neighbor](./Images/ABR2%20show%20ip%20ospf%20neighbor.PNG)
 
-### ABR3 (Area Border Router) Configuration
+---
+
+## ABR3 (Area Border Router) Configuration
 ```cisco
 router ospf 1
 network 10.12.0.0 0.0.255.255 area 0
@@ -84,7 +90,9 @@ router-id 1.1.1.4
 ```
 ![ABR3 show ip ospf neighbor](./Images/ABR3%20show%20ip%20ospf%20neighbor.PNG)
 
-### ASBR (Autonomous System Boundary Router) Configuration
+---
+
+## ASBR (Autonomous System Boundary Router) Configuration
 ```cisco
 router ospf 1
 network 10.12.0.0 0.0.255.255 area 0
@@ -96,7 +104,7 @@ ip route 0.0.0.0 0.0.0.0 209.30.17.1
 ```
 ![ASBR show ip ospf neighbor](./Images/ASBR%20show%20ip%20ospf%20neighbor.PNG)
 
-### Internal Router (IR0) Configuration (Is the same for the other IRs)
+## Internal Router (IR0) Configuration (Is the same for the other IRs)
 ```cisco
 router ospf 1
 network 10.20.0.0 0.15.255.255 area 1
@@ -160,4 +168,9 @@ traceroute 192.168.3.1 source 10.20.1.1
 - Confirm **authentication keys match** on connected interfaces
 - Use `debug ip ospf events` for adjacency issues
 
-### Feel free to clone this project and modify the configurations to fit your own scenarios. Multi-area OSPF requires careful planning, but mastering it is essential for large-scale network design!
+---
+
+**Thank you for reviewing this project.**
+You are welcome to use, adapt, or extend this project for educational or lab purposes.
+
+For questions, suggestions, or improvements, feel free to contribute or open an issue.
