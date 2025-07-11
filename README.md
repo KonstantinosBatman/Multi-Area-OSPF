@@ -104,12 +104,41 @@ ip route 0.0.0.0 0.0.0.0 209.30.17.1
 ```
 ![ASBR show ip ospf neighbor](./Images/ASBR%20show%20ip%20ospf%20neighbor.PNG)
 
+---
+
 ## Internal Router (IR0) Configuration (Is the same for the other IRs)
 ```cisco
 router ospf 1
 network 10.20.0.0 0.15.255.255 area 1
 router-id 1.1.2.1
 ```
+
+---
+
+# Routing Table for All Routers
+
+## ABR1  
+![ABR1](./Images/ABR1%20show%20ip%20route.PNG)
+
+
+## ABR2
+
+![ABR2](./Images/ABR2%20show%20ip%20route.PNG)
+
+
+## ABR3
+
+![ABR3](./Images/ABR3%20show%20ip%20route.PNG)
+
+
+## ASBR  
+
+![ASBR](./Images/ASBR%20show%20ip%20route.PNG)
+
+
+## BBR  
+
+![BBR](./Images/BBR%20show%20ip%20route.PNG)
 
 ### OSPF Cost Change (On All routers)
 ```cisco
